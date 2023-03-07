@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "twitter-brands"
+version = "0.1.0"
+description = ""
+authors = ["Juan Manuel Pérez <jmperez.85@gmail.com>"]
+readme = "README.md"
+packages = [{include = "twitter_brands"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8, <3.11"
+transformers = "^4.26.1"
+sklearn = "^0.0.post1"
+pandas = "^1.5.3"
+pysentimiento = "^0.6.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.21.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
